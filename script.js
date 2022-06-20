@@ -34,46 +34,50 @@ let quantidadeMacarrao = parseInt(prompt(`Quantas unidades?`));
 
 totalMac = precoMacarrao * quantidadeMacarrao;
 
-alert(`Valor total a ser pago: ${totalMac}`);
 
 let precoRefrigerante = parseFloat(prompt(`Digite o valor do refrigerante`));
 let quantidadeRefrigerante = parseInt(prompt(`Quantas unidades?`));
 
 totalRefri = precoRefrigerante * quantidadeRefrigerante;
 
-alert(`Valor total a ser pago: ${totalRefri}`);
 
 let precoErvilha = parseFloat(prompt(`Digite o valor da ervilha`));
 let quantidadeErvilha = parseInt(prompt(`Quantas unidades?`));
 
 totalErv = precoErvilha * quantidadeErvilha;
 
-alert(`Valor total a ser pago: ${totalErv}`);
 
 let precoArroz = parseFloat(prompt(`Digite o valor do arroz`));
 let quantidadeArroz = parseInt(prompt(`Quantas unidades?`));
 
 totalArr = precoArroz * quantidadeArroz;
 
-alert(`O valor a ser pago: ${totalArr}`);
 
 let precoFeijao = parseFloat(prompt(`Digite o valor do feijão`));
 let quantidadeFeijao = parseInt(prompt(`Quantas unidades?`));
 
 totalFeij = precoFeijao * quantidadeFeijao;
 
-alert(`O valor a ser pago: ${totalFeij}`);
 
 let precoVinho = parseFloat(prompt(`Digite o valor do vinho`));
 let quantidadeVinho = parseInt(prompt(`Quantas unidades?`));
 
 totalVin = precoVinho * quantidadeVinho;
 
-alert(`O valor a ser pago: ${totalVin}`);
 
 totalProdutos = Number(totalMac) + Number(totalRefri) + Number(totalErv) + Number(totalArr) + Number(totalFeij) + Number(totalVin);
 
 alert(`O total da compra foi de : ${totalProdutos}`)
+
+if(totalProdutos % 2 == 0){
+    let eu = Number(metadeCompra) - Number(metadeVinho);
+    let amigo = Number(metadeCompra) + Number(totalVinho);
+    alert(`Eu irei pagar ${eu.toFixed(2)} e o Lucas irá pagar ${amigo.toFixed(2)}`)
+} else{
+    let euim = Number(metadeCompra) + Number(metadeVinho);
+    let amigoim = Number(metadeCompra) + Number(metadeVinho);
+    alert(`Eu irei pagar ${euim.toFixed(2)} e o Lucas irá pagar ${amigoim.tofixed(2)}`)
+}
 
 
 
